@@ -1,31 +1,68 @@
 .header {
-  background-color: gray;
-  padding: 1rem 2rem;
+  background-color: var(--bg-secondady);
+  padding: .5rem 2rem;
+  box-sizing: content-box;
 }
 
 .header > nav {
   display: flex;
-  background-color: red;
-  justify-content: space-between
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header div#logo {
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+}
+
+#logo_img {
+  border-radius: 99px;
 }
 
 .sections {
   display: flex;
+  align-items: center;
+  font-size: small;
+  font-weight: bold;
 }
 
 .sections > ol {
-  background-color: blue;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
 
-.sections > ol > li {
-  padding: .5rem 1rem;
+.sections li {
+  counter-increment: i 1;
+}
+
+.sections ol li a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+}
+
+.sections ol li a::before {
+  content: '0' counter(i) ".";
+  margin-right: 5px;
+  color: var(--primary);
+  font-weight: normal;
 }
 
 .sections a {
-  background-color: pink;
-  padding: .5rem .3rem;
+  padding: .5rem 1rem;
+  margin: 0 .2rem;
 }
 
+a#preview_pdf {
+  color: var(--primary);
+  font-weight: bold;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: .8rem 1.5rem;
+}
+
+a#preview_pdf:hover {
+  color: var(--color-light);
+  background-color: var(--primary);
+}

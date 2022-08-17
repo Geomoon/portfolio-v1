@@ -1,12 +1,16 @@
 import Image from "next/image";
 import styles from './Header.module.css';
+import {TbDownload} from 'react-icons/tb';
+import Link from "next/link";
 
 export const Header = () => {
   return (
-    <div id="header" className={styles.header} >
+    <div className={styles.header} >
       <nav>
-        <div id="logo" style={{backgroundColor: '#000000'}}>
-          <Image src={'/images/logo.png'} width={44} height={44}/>
+        <div id="logo" > 
+        <Link href={'/'}>
+          <Image src={'/images/logo.png'} width={44} height={44} id={styles.logo_img} />
+        </Link>
         </div>
         <div className={styles.sections}>
           <ol>
@@ -15,7 +19,7 @@ export const Header = () => {
             <li><a href="/#projects">Proyectos</a></li>
             <li><a href="/#contact">Contacto</a></li>
           </ol>
-          <a href="/carlos-luna.pdf">PDF</a>
+          <a id={styles.preview_pdf} href="/carlos-luna.pdf"><TbDownload /> PDF</a>
         </div>
       </nav>
     </div>
