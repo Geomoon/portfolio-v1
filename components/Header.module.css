@@ -1,0 +1,31 @@
+.header {
+  background-color: gray;
+  padding: 1rem 2rem;
+}
+
+.header > nav {
+  display: flex;
+  background-color: red;
+  justify-content: space-between
+}
+
+.sections {
+  display: flex;
+}
+
+.sections > ol {
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.sections > ol > li {
+  padding: .5rem 1rem;
+}
+
+.sections a {
+  background-color: pink;
+  padding: .5rem .3rem;
+}
+
