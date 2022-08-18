@@ -1,0 +1,23 @@
+#email_bar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  right: 1.5rem;
+}
+
+#email_bar::after {
+  content: "";
+  display: block;
+  height: 90px;
+  margin: 0 auto;
+  width: 1px;
+  background-color: var(--color);
+}
+
+#email_bar a {
+  margin: 1rem .2rem;
+  font-size: small;
+  writing-mode: vertical-lr;
+}
+

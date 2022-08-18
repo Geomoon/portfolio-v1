@@ -1,4 +1,13 @@
+import {Welcome} from "./Welcome"
 
 export const Content = () => {
-  return <h1>Content</h1>
+  
+  return (<>
+    <section><Welcome/></section>
+    <section><Welcome/></section>
+    <section><Welcome/></section>
+    <section><Welcome/></section>
+    <section><Welcome/></section>
+    </>
+  )
 }

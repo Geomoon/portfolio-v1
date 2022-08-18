@@ -1,0 +1,28 @@
+#social_links {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 1.5rem;
+}
+
+#social_links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#social_links ul::after {
+  content: "";
+  display: block;
+  height: 90px;
+  margin: 0 auto;
+  width: 1px;
+  background-color: var(--color);
+}
+
+#social_links ul li {
+  margin: 1rem .2rem;
+  font-size: x-large;
+}
+
