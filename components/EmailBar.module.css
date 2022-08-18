@@ -19,5 +19,10 @@
   margin: 1rem .2rem;
   font-size: small;
   writing-mode: vertical-lr;
+  transition: ease-out 200ms;
 }
 
+#email_bar a:hover {
+  color: var(--primary);
+  transform: translateY(-4px);
+}

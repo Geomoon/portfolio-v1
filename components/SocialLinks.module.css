@@ -24,5 +24,10 @@
 #social_links ul li {
   margin: 1rem .2rem;
   font-size: x-large;
+  transition: ease-out 200ms;
 }
 
+#social_links ul li:hover {
+  color: var(--primary);
+  transform: translateY(-4px);
+}

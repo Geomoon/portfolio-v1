@@ -2,6 +2,7 @@
   background-color: var(--bg-secondady);
   padding: .5rem 2rem;
   box-sizing: content-box;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header > nav {
@@ -59,9 +60,10 @@ a#preview_pdf {
   border: 1px solid var(--border-color);
   border-radius: 6px;
   padding: .8rem 1.5rem;
+  transition: 200ms;
 }
 
 a#preview_pdf:hover {
   color: var(--color-light);
-  background-color: var(--primary);
+  background-color: var(--primary-btn);
 }

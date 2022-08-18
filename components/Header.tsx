@@ -14,12 +14,12 @@ export const Header = () => {
         </div>
         <div className={styles.sections}>
           <ol>
-            <li><a href="/#about">Sobre mí</a></li>
-            <li><a href="/#jobs">Experiencia</a></li>
-            <li><a href="/#projects">Proyectos</a></li>
-            <li><a href="/#contact">Contacto</a></li>
+            <li><Link href="/#about">Sobre mí</Link></li>
+            <li><Link href="/#jobs">Experiencia</Link></li>
+            <li><Link href="/#projects">Proyectos</Link></li>
+            <li><Link href="/#contact">Contacto</Link></li>
           </ol>
-          <a id={styles.preview_pdf} href="/carlos-luna.pdf"><TbDownload /> PDF</a>
+          <a id={styles.preview_pdf} href="/carlos-luna.pdf" target={"_blank"}><TbDownload /> PDF</a>
         </div>
       </nav>
     </div>

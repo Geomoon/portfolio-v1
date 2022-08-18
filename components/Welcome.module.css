@@ -1,4 +1,6 @@
 .paragraph {
   max-width: 540px;
+  margin: 2rem 0;
+  line-height: 1.9;
 }
 
