@@ -27,7 +27,7 @@
   --color: #adbac7;
   --color-light: #fff;
   --border-color: #444c56;
-
+  --border-secondary: #EC775C;
   --title-font: 'Epilogue';
   --body-font: 'Inter';
   --code-font: 'JetBrains';
@@ -87,6 +87,15 @@ html {
   padding: 0;
 }
 
+.card.section {
+  align-items: center;
+  max-width: 50vw;
+}
+
+section {
+  align-items: center;
+}
+
 main {
   padding: 20vh 20% 0;
 }
@@ -94,6 +103,16 @@ main {
 @media (max-width: 1080px) {
   main {
     padding: 20vh 100px 0;
+  }
+
+  section, section * {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width: 1080px) {
+  section, section * {
+    max-width: 80vw;
   }
 }
 
@@ -105,6 +124,10 @@ main {
   background-color: var(--primary-btn);
   color: var(--color-light);
   font-weight: bold;
+}
+
+p {
+  line-height: 1.8;
 }
 
 /* SCROLLBAR */

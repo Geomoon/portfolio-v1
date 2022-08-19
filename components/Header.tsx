@@ -8,9 +8,9 @@ export const Header = () => {
     <div className={styles.header} >
       <nav>
         <div id="logo" > 
-        <Link href={'/'}>
+        <a href={'/'}>
           <Image src={'/images/logo.png'} width={44} height={44} id={styles.logo_img} />
-        </Link>
+        </a>
         </div>
         <div className={styles.sections}>
           <ol>

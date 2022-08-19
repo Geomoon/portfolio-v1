@@ -1,5 +1,6 @@
 import {Component, ReactNode} from "react";
 import {EmailBar} from "./EmailBar";
+import {Footer} from "./Footer";
 import { Header } from "./Header";
 import {SocialLinks} from "./SocialLinks";
 
@@ -14,6 +15,7 @@ export default function Layout({ children }: Props) {
             <main>{ children }</main>
             <SocialLinks />
             <EmailBar />
+            <Footer />
         </>
     );
 }

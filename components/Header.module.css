@@ -38,8 +38,7 @@
 }
 
 .sections ol li a:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--primary);
+  border-bottom: 2px double var(--primary);
 }
 
 .sections ol li a::before {

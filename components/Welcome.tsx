@@ -2,7 +2,8 @@ import Link from 'next/link';
 import styles from './Welcome.module.css';
 
 export const Welcome = () => {
-  return (<div className='card' >
+  return (
+  <div className='card' >
     <h4>Hola, mi nombre es</h4>
     <h1>Carlos Luna.</h1>
     <h1 className='fade_text'>Software Developer</h1>

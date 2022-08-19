@@ -1,0 +1,31 @@
+.title_section {
+  display: flex;
+  font-size: clamp(24px, 4vw, 30px);
+  color: var(--color-light);
+  width: 100%;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title_section span {
+  font-family: var(--code-font);
+  font-size: clamp(20px, 2.5vw, 28px);
+  color: var(--primary) ;
+  margin-right: 1rem;
+}
+
+.title_section::after {
+  content: "";
+  width: 300px;
+  height: 1px;
+  background-color: var(--border-color);
+  position: relative;
+  display: block;
+  margin-left: 20px;
+}
+
+@media ( max-width: 1080px ) {
+  .title_section::after {
+    width: 200px;
+  }
+}

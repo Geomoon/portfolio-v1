@@ -20,9 +20,11 @@
   font-size: small;
   writing-mode: vertical-lr;
   transition: ease-out 200ms;
+  letter-spacing: 4px;
 }
 
 #email_bar a:hover {
   color: var(--primary);
   transform: translateY(-4px);
+  font-size: medium;
 }

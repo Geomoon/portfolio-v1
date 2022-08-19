@@ -1,5 +1,5 @@
 import {ReactNode} from "react";
-import { TbBrandGithub, TbBrandInstagram, TbBrandLinkedin } from 'react-icons/tb';
+import { TbBrandGithub, TbMail, TbBrandLinkedin } from 'react-icons/tb';
 import {SocialLinkItem} from "./SocialLinkItem";
 import styles from './SocialLinks.module.css';
 
@@ -13,8 +13,8 @@ export const SocialLinks = () => {
   
   const socialLinks: SocialItem[]= [
     { link: 'https://github.com/Geomoon', icon: <TbBrandGithub /> },
-    { link: 'https://github.com/Geomoon', icon: <TbBrandInstagram /> },
     { link: 'https://github.com/Geomoon', icon: <TbBrandLinkedin /> },
+    { link: 'mailto:lunageovanny23@gmail.com', icon: <TbMail /> },
   ];
 
   const items = socialLinks.map( (item, index) => 

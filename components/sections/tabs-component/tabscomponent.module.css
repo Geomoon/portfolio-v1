@@ -1,0 +1,40 @@
+.grid_content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs button {
+  padding: 1rem .5rem;
+  font-family: var(--code-font);
+  max-width: 10rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-right: 1px solid var(--border-color);
+}
+
+.tabs button:hover {
+  border-left: 3px solid var(--primary);
+}
+
+.tabs_content {
+  padding: 1rem;
+}
+
+.active_tab {
+  display: block;
+}
+
+.inactive_tab {
+  display: none;
+}
+
+.selected_tab {
+  border-left: 3px solid var(--primary);
+}
+
