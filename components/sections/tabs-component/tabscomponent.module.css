@@ -3,6 +3,10 @@
   grid-template-columns: auto 1fr;
 }
 
+.grid_content * {
+  transition: linear 200ms;
+}
+
 .tabs {
   display: flex;
   flex-direction: column;
@@ -15,15 +19,25 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  border-right: 1px solid var(--border-color);
+  width: 100%;
+  color: var(--color);
 }
 
-.tabs button:hover {
-  border-left: 3px solid var(--primary);
+.tabs div {
+  border-right: 1px solid var(--border-color);
+  border-radius: 6px 0 0 6px;
+}
+
+.tabs div:hover {
+  background-color: var(--border-color);
 }
 
 .tabs_content {
   padding: 1rem;
+}
+
+.tabs_content h3 {
+  color: var(--color-light);
 }
 
 .active_tab {
@@ -35,6 +49,15 @@
 }
 
 .selected_tab {
-  border-left: 3px solid var(--primary);
+  background-color: var(--primary-btn);
+  border: none;
 }
 
+.selected_tab button {
+  color: var(--color-light);
+}
+
+.tabs_content ul {
+  list-style-type: square;
+  line-height: 1.8;
+}

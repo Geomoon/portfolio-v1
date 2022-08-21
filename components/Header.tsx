@@ -15,7 +15,7 @@ export const Header = () => {
         <div className={styles.sections}>
           <ol>
             <li><Link href="/#about">Sobre mí</Link></li>
-            <li><Link href="/#jobs">Experiencia</Link></li>
+            <li><Link href="/#experience">Experiencia</Link></li>
             <li><Link href="/#projects">Proyectos</Link></li>
             <li><Link href="/#contact">Contacto</Link></li>
           </ol>

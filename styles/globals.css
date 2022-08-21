@@ -110,9 +110,13 @@ main {
   }
 }
 
-@media (min-width: 1080px) {
+@media (max-width: 768px) {
+  main {
+    padding: 10vh 100px 0;
+  }
+
   section, section * {
-    max-width: 80vw;
+    max-width: 90vw;
   }
 }
 

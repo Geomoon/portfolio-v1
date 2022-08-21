@@ -8,10 +8,10 @@ export const Content = () => {
   
   return (<>
     <section><Welcome /></section>
-    <section><AboutMe /></section>
-    <section><Experience /></section>
-    <section><Projects /></section>
-    <section><Contact /></section>
+    <section><AboutMe anchorId="about" /></section>
+    <section><Experience anchorId="experience"/></section>
+    <section><Projects anchorId="projects"/></section>
+    <section><Contact anchorId="contact"/></section>
     </>
   )
 }

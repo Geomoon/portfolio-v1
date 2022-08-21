@@ -2,9 +2,14 @@ import Image from "next/image";
 import {TitleSection} from "./TitleSection"
 import styles from './aboutme.module.css';
 
-export const AboutMe = () => {
+type Props = {
+  anchorId: string
+}
+
+export const AboutMe = ({ anchorId }: Props) => {
   return (
     <div className='card' >
+      <a id={anchorId}></a>
       <TitleSection num="01." title="Sobre Mí" />
       <div className={ styles.grid_content } >
         <div className={ styles.text_content }>
