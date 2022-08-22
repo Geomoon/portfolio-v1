@@ -21,7 +21,7 @@ Fast-forward to today, and I’ve had the privilege of working at an advertising
           </p>
         </div>
         <div id={ styles.photo }>
-          <Image src={'/images/photo-color.webp'} width={300} height={300} 
+          <Image src={'/images/photo-color.webp'} layout='responsive' width={300} height={300} 
             id={ styles.img } />
         </div>
       </div>
