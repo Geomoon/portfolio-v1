@@ -25,6 +25,8 @@
   --primary: #539bf5;
   --primary-btn: #1f6feb;
   --prymary-shadow: #70A3F2;
+  --shadow-color: #4e5258;
+  --shadow-color-2: rgba(2,12,27,0.7);
   --color: #adbac7;
   --color-light: #fff;
   --border-color: #444c56;
@@ -106,7 +108,7 @@ main {
     padding: 20vh 100px 0;
   }
 
-  section, section * {
+  section.section_content, section * {
     max-width: 80vw;
   }
 }
@@ -116,7 +118,7 @@ main {
     padding: 10vh 100px 0;
   }
 
-  section, section * {
+  section.section_content, section * {
     max-width: 90vw;
   }
 }

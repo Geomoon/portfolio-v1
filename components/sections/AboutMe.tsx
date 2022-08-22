@@ -20,7 +20,7 @@ Hello! My name is Brittany and I enjoy creating things that live on the internet
 Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.
           </p>
         </div>
-        <div id={ styles.photo }>
+        <div id={styles.photo}>
           <Image src={'/images/photo-color.webp'} layout='responsive' width={300} height={300} 
             id={ styles.img } />
         </div>
