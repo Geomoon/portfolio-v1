@@ -2,6 +2,7 @@ import {TbBrandGithub} from "react-icons/tb";
 import {TitleSection} from "./TitleSection";
 import styles from './projects.module.css';
 import Image from "next/image";
+import {GitHubCard} from "../GithubCard";
 
 type Props = {
   anchorId: string
@@ -16,30 +17,47 @@ export const Projects = ({ anchorId }: Props) => {
       <ProjectWithImage 
         title={'eIntegral'}
         imageURL={'/images/eintegral-app.png'}
-        description={<p>Una calculadora básica desarrollada en <a href="https://www.python.org/">Python</a>, para resolver integrales definidas e indefinidas, mostrando el resultado de forma amigable usando lenguaje <a href="https://www.latex-project.org/">LaTeX</a>.</p>}
         githubLink={'https://github.com/Geomoon/eintegral'}
-        techList={[ 'Python', 'Sympy', 'Matplotlib', 'Pyplot', 'Tkinter' ]} />
+        techList={[ 'Python', 'Sympy', 'Matplotlib', 'Pyplot', 'Tkinter' ]}
+        description={
+        <p>Una calculadora básica desarrollada en <a href="https://www.python.org/">Python</a>, para resolver integrales definidas e indefinidas, mostrando el resultado de forma amigable usando lenguaje <a href="https://www.latex-project.org/">LaTeX</a>.
+        </p>
+        } />
 
       <ProjectWithImage
         reverse={true}
         title="Email Verification API"
         imageURL="/images/email-verification.png"
+        techList={['Java', 'Quarkus', 'REST API', 'Email Service']}
+        githubLink="https://github.com/Geomoon/email-verification-quarkus-api"
         description={
           <p>REST API desarrollada con <a href="https://quarkus.io/">Quarkus</a>, una API de registro de usuarios con email y contraseña, que permite verificar la cuenta de correo del usuario al enviar un email con un link de verificacion.</p>
-        }
-        techList={['Java', 'Quarkus', 'REST API', 'Email Service']}
-        githubLink="https://github.com/Geomoon/email-verification-quarkus-api" />
+        } />
 
         <ProjectWithImage
           title="Fiber Go API"
           imageURL="/images/fiber-go-api.png"
+          techList={['Go', 'Fiber', 'REST API', 'Bcrypt']}
+          githubLink="https://github.com/Geomoon/fiber-go-rest-api"
           description={
           <p>
           REST API desarrollada en <a href="https://go.dev/">Go</a> y <a href="https://docs.gofiber.io/">Fiber</a>, un ejemplo básico de la implementación de este lenguaje en el backend.
           </p>
-          }
-          techList={['Go', 'Fiber', 'REST API', 'Bcrypt']}
-          githubLink="https://github.com/Geomoon/fiber-go-rest-api" />
+          } />
+
+          <ProjectWithImage
+            reverse={true}
+            title="Spring S3 Client API"
+            imageURL="/images/s3-api.png"
+            techList={['Java', 'REST API', 'Spring', 'Amazon S3']}
+            githubLink="https://github.com/Geomoon/eintegral"
+            description={
+            <p>
+            Proyecto desarrollado en <a href="https://spring.io/projects/spring-boot">Spring Boot</a>, una REST API cliente de <a href="https://aws.amazon.com/es/s3/">Amazon S3</a>, que permite subir archivos a una instancia de almacenamiento S3 y poder consultarlos posteriormente de manera sencilla.
+            </p>
+            } />
+
+            <GitHubCard url="https://github.com/Geomoon" userImgURL="/images/photo-color.webp" username="geovlunaa" />
 
     </div>
   )
@@ -87,4 +105,5 @@ const ProjectWithImage = ({ reverse, title, description, techList, imageURL, git
     </div>
   )
 }
+
 
