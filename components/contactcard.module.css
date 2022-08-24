@@ -1,0 +1,80 @@
+.contact_card {
+  margin-inline: auto;
+  margin-top: 5rem;
+  background-color: var(--bg-secondady);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  max-width: fit-content;
+}
+
+.info_section {
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info_section .icons{
+  padding-right: 1rem;
+  align-items: center;
+}
+
+.copy_icons button {
+  padding: .5rem .7rem;
+  margin: 0;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  font-size: larger;
+  border-radius: 6px;
+  color: var(--color);
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.copy_icons button:hover {
+  background-color: var(--border-color);
+}
+
+.links_section {
+  display: flex;
+  gap: 1rem;
+}
+
+.links_section a {
+  transition: 200ms;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.links_section .mail_link {
+  color: #EC775C;
+}
+
+.links_section .mail_link:hover {
+  background-color: #EC775C;
+  color: var(--color-light);
+}
+
+.links_section .linkedin_link {
+  color: var(--primary);
+}
+
+.links_section .linkedin_link:hover {
+  background-color: var(--primary-btn);
+  color: var(--color-light);
+}
+
+.separator {
+  background-color: var(--border-color);
+  height: 1px;
+}
+
+.icons {
+  font-size: larger;
+}
+
