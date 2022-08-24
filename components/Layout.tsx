@@ -1,4 +1,4 @@
-import {Component, ReactNode} from "react";
+import {ReactNode} from "react";
 import {EmailBar} from "./EmailBar";
 import {Footer} from "./Footer";
 import { Header } from "./Header";

@@ -13,7 +13,7 @@ export const SocialLinks = () => {
   const socialLinks: SocialItem[]= [
     { link: 'https://github.com/Geomoon', icon: <TbBrandGithub /> },
     { link: 'https://www.linkedin.com/in/carlos-luna-dev/', icon: <TbBrandLinkedin /> },
-    { link: 'mailto:lunageovanny23@gmail.com', icon: <TbMail /> },
+    { link: 'mailto:lunacarlos.dev@gmail.com', icon: <TbMail /> },
   ];
 
   const items = socialLinks.map( (item, index) => 

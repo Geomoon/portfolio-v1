@@ -49,24 +49,29 @@
   padding: 1rem 1.5rem;
   border-radius: 6px;
   border: 1px solid var(--border-color);
+  color: var(--color-light);
 }
 
 .links_section .mail_link {
-  color: #EC775C;
+  background-color: #EC775C;
 }
 
 .links_section .mail_link:hover {
-  background-color: #EC775C;
-  color: var(--color-light);
+  background-color: transparent;
+  border: 2px solid #EC775C;
+  color: #EC775C;
+  font-weight: bold;
 }
 
 .links_section .linkedin_link {
-  color: var(--primary);
+  background-color: var(--primary-btn);
 }
 
 .links_section .linkedin_link:hover {
-  background-color: var(--primary-btn);
-  color: var(--color-light);
+  background-color: transparent;
+  border: 2px solid var(--primary-btn);
+  color: var(--primary);
+  font-weight: bold;
 }
 
 .separator {

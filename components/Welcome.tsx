@@ -1,7 +1,27 @@
 import Link from 'next/link';
+import {useEffect} from 'react';
+import {toast, ToastContainer} from 'react-toastify';
 import styles from './Welcome.module.css';
 
 export const Welcome = () => {
+  
+    const showToast = () =>
+    toast('Bienvenido/a!', {
+      position: "bottom-center",
+      autoClose: 4000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'dark',
+      closeButton: false
+    });
+
+    useEffect(() => {
+      showToast();
+    }, []);
+  
   return (
   <div className='card' >
     <h4>Hola, mi nombre es</h4>
@@ -15,6 +35,7 @@ export const Welcome = () => {
           Check out this!
         </a>
       </Link>
+      <ToastContainer />
    </div>
   )
 }

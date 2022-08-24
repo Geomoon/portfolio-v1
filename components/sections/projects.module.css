@@ -100,10 +100,6 @@
 .project_links a {
   padding: 1rem;
   border-radius: 6px;
-}
-
-.project_links a:hover {
-  background-color: var(--border-color);
-  color: red;
+  font-weight: normal;
 }
 

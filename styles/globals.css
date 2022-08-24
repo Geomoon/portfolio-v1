@@ -131,6 +131,14 @@ main {
   background-color: var(--primary-btn);
   color: var(--color-light);
   font-weight: bold;
+  transition: 200ms;
+}
+
+.action_button:hover {
+  background-color: transparent;
+  border: 2px solid var(--primary-btn);
+  color: var(--primary);
+  font-weight: bold;
 }
 
 p {
@@ -167,3 +175,8 @@ footer a {
   border-radius: 6px;
   border: 2px solid var(--bg-primary);
 }
+
+.body_toast {
+  background-color: #347D39;
+}
+

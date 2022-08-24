@@ -90,7 +90,7 @@ const ProjectWithImage = ({ reverse, title, description, techList, imageURL, git
         <ul>
           <li>
             <a href={githubLink} 
-              target="_blank" style={{ backgroundColor: 'var(--primary-btn)', color: 'var(--color-light)' }}>
+              target="_blank" className="action_button" >
               { 'Ver en Github '}
               <TbBrandGithub />
             </a>
