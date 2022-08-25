@@ -7,8 +7,8 @@ type Props = {
 
 export const Contact = ({ anchorId }: Props) => {
   return (
-    <div className='card'>
-      <a id={anchorId}></a>
+    <div className='card' id={anchorId}>
+      <a ></a>
       <TitleSection num="03." title="Contacto" />
       <ContactCard />
     </div>

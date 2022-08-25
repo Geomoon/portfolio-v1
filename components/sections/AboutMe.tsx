@@ -13,8 +13,7 @@ export const AboutMe = ({ anchorId }: Props) => {
   ];
 
   return (
-    <div className='card' >
-      <a id={anchorId}></a>
+    <div className='card' id={anchorId}>
       <TitleSection num="01." title="Sobre Mí" />
       <div className={ styles.grid_content } >
         <div className={ styles.text_content }>

@@ -13,7 +13,7 @@
 
 .info_section {
   display: flex;
-  padding: 0 1rem;
+  padding: 1rem;
   justify-content: space-between;
   align-items: center;
 }

@@ -10,8 +10,7 @@ type Props = {
 
 export const Projects = ({ anchorId }: Props) => {
   return (
-    <div className='card'>
-      <a id={anchorId}></a>
+    <div className='card' id={anchorId}>
       <TitleSection num="02." title="Proyectos" />
 
       <ProjectWithImage 
