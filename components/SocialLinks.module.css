@@ -31,3 +31,9 @@
   color: var(--primary);
   transform: translateY(-4px);
 }
+
+@media (max-width: 480px) {
+  #social_links {
+    display: none;
+  }
+}

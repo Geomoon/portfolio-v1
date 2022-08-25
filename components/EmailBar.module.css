@@ -28,3 +28,10 @@
   transform: translateY(-4px);
   font-size: medium;
 }
+
+@media (max-width: 720px) {
+  #email_bar {
+    display: none;
+  }
+}
+

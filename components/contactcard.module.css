@@ -44,12 +44,19 @@
   gap: 1rem;
 }
 
+@media (max-width: 768px) {
+  .links_section {
+    flex-direction: column;
+  }
+}
+
 .links_section a {
   transition: 200ms;
   padding: 1rem 1.5rem;
   border-radius: 6px;
   border: 1px solid var(--border-color);
   color: var(--color-light);
+  text-align: center;
 }
 
 .links_section .mail_link {

@@ -1,8 +1,19 @@
 .header {
   background-color: var(--bg-secondady);
   padding: .5rem 2rem;
-  box-sizing: content-box;
   border-bottom: 1px solid var(--border-color);
+}
+
+@media(max-width: 768px) {
+  .header {
+    min-width: max-content;
+  }
+}
+
+@media(max-width: 480px) {
+  .header {
+    display: none;
+  }
 }
 
 .header > nav {

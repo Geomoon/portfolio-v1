@@ -81,6 +81,7 @@ a {
 
 html {
   color-scheme: dark;
+  scroll-behavior: smooth;
 }
 
 .card {
@@ -115,11 +116,22 @@ main {
 
 @media (max-width: 768px) {
   main {
-    padding: 10vh 100px 0;
+    padding: 100px 10vw 0;
+    width: fit-content;
   }
 
-  section.section_content, section * {
-    max-width: 90vw;
+  section {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: medium;
   }
 }
 
@@ -174,9 +186,5 @@ footer a {
   background-color: var(--border-color);
   border-radius: 6px;
   border: 2px solid var(--bg-primary);
-}
-
-.body_toast {
-  background-color: #347D39;
 }
 

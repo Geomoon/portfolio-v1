@@ -50,7 +50,7 @@ export const Projects = ({ anchorId }: Props) => {
             title="Spring S3 Client API"
             imageURL="/images/s3-api.png"
             techList={['Java', 'REST API', 'Spring', 'Amazon S3']}
-            githubLink="https://github.com/Geomoon/eintegral"
+            githubLink="https://github.com/Geomoon/spring-s3-client-api"
             description={
             <p>
             Proyecto desarrollado en <a href="https://spring.io/projects/spring-boot">Spring Boot</a>, una REST API cliente de <a href="https://aws.amazon.com/es/s3/">Amazon S3</a>, que permite subir archivos a una instancia de almacenamiento S3 y poder consultarlos posteriormente de manera sencilla.

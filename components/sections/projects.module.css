@@ -103,3 +103,13 @@
   font-weight: normal;
 }
 
+@media (max-width: 768px) {
+  .grid_project {
+    display: block;
+  }
+
+  .project_content, .project_content_reverse {
+    margin-bottom: 4rem;
+  }
+}
+
